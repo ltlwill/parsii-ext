@@ -1,7 +1,7 @@
 # parsii-ext
-## 扩展parsii,支持求解一元一次方程
-使用Demo:
-```java
+## 扩展parsii, 支持求解一元一次方程
+使用Demo
+``` java
 String function = "x-x*0.06*(0.02+0.03+0.01)=2359207.68"; // expect x = 2367731.51
 Expression expression;
 try {
@@ -14,7 +14,7 @@ double x = expr.getValue();
 ```
 
 ### 测试（see com.company.BinaryExprTest）：
-```java
+``` java
 String expr0 = "x - x*0.06*(0.02 + 0.03 + 0.01) = 3638930.77"; // expect x = 3652078.25
 String expr1 = "100 - x + 0.06*x = 3638930.77"; // expect x = -3871096.56
 String expr2 = "x - x*0.06*(0.02 + 0.03 + 0.01) = 2359207.68"; // expect x = 2367731.51
