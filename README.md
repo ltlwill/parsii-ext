@@ -1,7 +1,6 @@
 # parsii-ext
 ## 扩展parsii,支持求解一元一次方程
-======
-### 使用Demo:
+使用Demo:
 ```java
 String function = "x-x*0.06*(0.02+0.03+0.01)=2359207.68"; // expect x = 2367731.51
 Expression expression;
@@ -16,11 +15,11 @@ double x = expr.getValue();
 
 ### 测试（see com.company.BinaryExprTest）：
 ```java
-String expr0 = "x-x*0.06*(0.02+0.03+0.01)=3638930.77"; // expect x = 3652078.25
+String expr0 = "x - x*0.06*(0.02 + 0.03 + 0.01) = 3638930.77"; // expect x = 3652078.25
 String expr1 = "100 - x + 0.06*x = 3638930.77"; // expect x = -3871096.56
-String expr2 = "x-x*0.06*(0.02+0.03+0.01)=2359207.68"; // expect x = 2367731.51
-String expr3 = "x=100"; // expect x = 100
-String expr4 = "x-x*0.06*(0.02+0.03+0.01)=8000000000"; // expect x = 8.028904054596548E9
+String expr2 = "x - x*0.06*(0.02 + 0.03 + 0.01) = 2359207.68"; // expect x = 2367731.51
+String expr3 = "x = 100"; // expect x = 100
+String expr4 = "x - x*0.06*(0.02 + 0.03 + 0.01) = 8000000000"; // expect x = 8.028904054596548E9
 String expr5 = "1 + 2 + 3 * 5"; // expect 18
 
 expect(testExpr(expr0), 3652078.25);
@@ -50,3 +49,13 @@ static void expect(double actual, double expected){
     throw new RuntimeException("expected '" + expected + "', actual '" + actual + "'");
 }
 ```
+
+## Maven
+
+parsii-ext 在项目pom.xml中引用:
+
+    <dependency>
+      <groupId>com.company</groupId>
+      <artifactId>parsii-ext</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
