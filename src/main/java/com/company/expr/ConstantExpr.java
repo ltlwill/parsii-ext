@@ -3,7 +3,7 @@ package com.company.expr;
 import parsii.eval.Constant;
 
 /**
- *  Solve the simple equation of one dollar.
+ *  Solving the equation of one variable once.
  *
  *  @author zonghai.szh
  */

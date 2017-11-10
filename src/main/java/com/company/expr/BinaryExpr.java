@@ -14,7 +14,7 @@ import parsii.eval.VariableReference;
 
 /***
  *
- * Solve the simple equation of one dollar.
+ * Solving the equation of one variable once.
  * eg: X + 1000-X*0.06*(0.02+0.03+0.07) = 67677.21, then will solve the result of x.
  *
  * <p>Here is the demo to use this program.
