@@ -6,6 +6,7 @@ import parsii.eval.Constant;
  *  Solving the equation of one variable once.
  *
  *  @author zonghai.szh
+ * @email  517618650@qq.com
  */
 public class ConstantExpr extends Constant {
 

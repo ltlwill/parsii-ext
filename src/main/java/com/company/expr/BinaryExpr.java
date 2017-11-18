@@ -31,6 +31,7 @@ import parsii.eval.VariableReference;
  * </pre>
  *
  * @author zonghai.szh
+ * @email  517618650@qq.com
  *
  */
 public class BinaryExpr extends BinaryOperation {
