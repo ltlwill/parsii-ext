@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="parsii-ext" />
         <module name="parsiiext" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="parsii-ext" target="1.7" />
       <module name="parsiiext" target="1.7" />
     </bytecodeTargetLevel>
   </component>
