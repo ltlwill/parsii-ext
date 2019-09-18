@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.company</groupId>
+  <groupId>com.efe</groupId>
   <artifactId>parsii-ext</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>parsii-ext</name>
@@ -12,10 +12,11 @@
 
   <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.7</maven.compiler.source>
-      <maven.compiler.target>1.7</maven.compiler.target>
-      <junit.version>4.0</junit.version>
-      <parsii.version>3.1</parsii.version>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <junit.version>4.12</junit.version>
+      <parsii.version>4.0</parsii.version>
+      <maven-surefire-plugin.version>2.4.2</maven-surefire-plugin.version>
   </properties>
 
   <dependencies>
@@ -31,4 +32,22 @@
         <version>${parsii.version}</version>
       </dependency>
   </dependencies>
+  <build>
+  	<plugins>
+  		<!-- 设置默认变异级别为1.8 -->
+  		<plugin>  
+			<groupId>org.apache.maven.plugins</groupId>  
+			<artifactId>maven-compiler-plugin</artifactId>  
+		</plugin>
+        <!-- 打包时跳过test插件，不运行test测试用例 -->
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>   
+	        <artifactId>maven-surefire-plugin</artifactId>   
+	        <version>${maven-surefire-plugin.version}</version>   
+	        <configuration>   
+	          <skipTests>true</skipTests>   
+	        </configuration>   
+  		</plugin>
+  	</plugins> 	
+  </build>
 </project>

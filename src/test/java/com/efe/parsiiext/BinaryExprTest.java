@@ -1,11 +1,14 @@
-package com.company;
+package com.efe.parsiiext;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 
-import com.company.expr.BinaryExpr;
+import com.efe.parsiiext.BinaryExpr;
+
 import junit.framework.TestCase;
+
 import org.junit.Test;
+
 import parsii.eval.Expression;
 import parsii.eval.Parser;
 import parsii.eval.Scope;
@@ -13,7 +16,8 @@ import parsii.tokenizer.ParseException;
 
 public class BinaryExprTest extends TestCase {
 
-    @Test
+    @SuppressWarnings("unused")
+	@Test
     public void test_solve_simple_function(){
 
         String expr0 = "x-x*0.06*(0.02+0.03+0.01)=3638930.77"; // expect x = 3652078.25

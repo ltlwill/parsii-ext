@@ -1,3 +1,10 @@
+
+## 原始项目：https://github.com/zonghaishang/parsii-ext
+## 本项目基于原始项目改造：
+1. 升级 parsii 依赖至4.0版本
+2. 修改一元一次方程计算不对的问题，如方程：x = (x*0.2 + x*0.11 + 8.87)，计算结果是错误的，解决方法是将方程式转义为：(x) - (x*0.2 + x*0.11 + 8.87) = 0，即可解决，
+	增加了EscapeParser类执行转义，使用时将 原来的：Parser.parse(expStr) 替换为：EscapeParser.parse(expStr) 即可
+
 # parsii-ext
 ## 扩展parsii, 支持求解一元一次方程
 使用Demo
