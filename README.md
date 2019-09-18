@@ -61,8 +61,28 @@ static void expect(double actual, double expected){
 
 parsii-ext 在项目pom.xml中引用:
 
+	<dependency>
+	    <groupId>com.scireum</groupId>
+	    <artifactId>parsii</artifactId>
+	    <version>4.0</version> 
+	</dependency>
+		
     <dependency>
-      <groupId>com.company</groupId>
+      <groupId>com.efe</groupId>
       <artifactId>parsii-ext</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
     </dependency>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
